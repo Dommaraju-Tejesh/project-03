@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Resume</title>
+  <style>
+  :root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f5f5f5;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0 20px;
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.theme-toggle {
+  text-align: right;
+  padding: 10px;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+</style>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">Switch Theme</button>
+  </div>
+
+  <div class="resume">
+    <header>
+      <img src="./images/hacker.webp" alt="Anonymous User" class="profile-pic">
+      <h1>Tejesh Raju</h1>
+      <p>Web Developer | Java Enthusiast</p>
+    </header>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: d.tejeshraju67@gmail.com</p>
+      <p>Phone: +91 7842613367</p>
+      <p>LinkedIn: Tejesh Raju</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p><strong>B.Tech in Computer Science</strong><br>panimalar engineering college, 2023–2027</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <p><strong>Frontend Developer Intern</strong><br> HCL Tech, Jan 2024 – May 2025</p>
+      <ul>
+        <li>Developed responsive landing pages using HTML, CSS, and JavaScript.</li>
+        <li>Worked on UI improvements and cross-browser compatibility.</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Java, Spring Boot</li>
+        <li>React, Git, MySQL</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
